@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Hello!</h1>
+	<form action="/predict/" method="POST">
+		<fieldset>
+		{% csrf_token %}
+		<label for="guests_included">Guests:</label>
+		<input type="number" id="guests_included" name="guests_included"><br>
+
+		<label for="review_scores_cleanliness">Cleanliness Score:</label>
+		<input type="number" id="review_scores_cleanliness" name="review_scores_cleanliness" ><br>
+
+		<label for="number_of_reviews_ltm">number_of_reviews_ltm:</label>
+		<input type="number" id="number_of_reviews_ltm" name='number_of_reviews_ltm' ><br>
+
+		<label for="review_scores_rating">review_scores_rating:</label>
+		<input type="number" id="review_scores_rating" name="review_scores_rating"><br>
+
+		<label for="bedrooms">bedrooms:</label>
+		<input type="number" id="bedrooms" name="bedrooms"><br>
+
+		<label for="cleaning_fee">cleaning_fee:</label>
+		<input type="number" id="cleaning_fee" name="cleaning_fee"><br>
+
+		<label for='accommodates '>accommodates :</label>
+		<input type="number"   id="accommodates " name="accommodates"><br>
+
+		<label for="review_scores_communication">review_scores_communication:</label>
+		<input type="number" id="review_scores_communication" name="review_scores_communication" ><br>
+
+		<label for="bathrooms">bathrooms:</label>
+		<input type="number" id="bathrooms" name="bathrooms"><br>
+
+		<label for="maximum_nights">maximum_nights:</label>
+		<input type="number" id="maximum_nights" name="maximum_nights"><br>
+
+		<label for="availability_30">availability_30:</label>
+		<input type="number" id="availability_30" name="availability_30"><br>
+
+		<label for="security_deposit">security_deposit:</label>
+		<input type="number" id="security_deposit" name="security_deposit"><br>
+
+		<label for="beds">beds:</label>
+		<input type="number" id="beds" name="beds"><br>
+
+		<label for="extra_people">extra_people:</label>
+		<input type="number" id="extra_people" name="extra_people"><br>
+
+
+		<label for="minimum_nights ">minimum_nights :</label>
+		<input type="number" id="minimum_nights" name="minimum_nights" ><br>
+
+
+		<label for="host_is_superhost_t">host_is_superhost_t:</label>
+		<input type="number" id="host_is_superhost_t" name="host_is_superhost_t"><br>
+
+		<label for="host_identity_verified_t">host_identity_verified_t:</label>
+		<input type="number" id="host_identity_verified_t" name="host_identity_verified_t" ><br>
+
+		<label for="is_location_exact_t">is_location_exact_t :</label>
+		<input type="number" id="is_location_exact_t " name="is_location_exact_t"><br>
+
+		<label for="instant_bookable_t">instant_bookable_t:</label>
+		<input type="number" id="instant_bookable_t" name="instant_bookable_t" ><br>
+
+		<label for="require_guest_profile_picture_t">require_guest_profile_picture_t:</label>
+		<input type="number" id="require_guest_profile_picture_t" name="require_guest_profile_picture_t" ><br>
+
+
+		<label for="require_guest_phone_verification_t">require_guest_phone_verification_t:</label>
+		<input type="number" id="require_guest_phone_verification_t" name="require_guest_phone_verification_t" ><br>
+
+
+		<label for="property_type ">property_type :</label>
+		<input type="text" id="property_type " name="property_type" ><br>
+
+
+		<label for="room_type ">room_type :</label>
+		<input type="text" id="room_type " name="room_type"><br>
+
+		<label for="calendar_updated">calendar_updated:</label>
+		<input type="text" id="calendar_updated" name="calendar_updated" ><br>
+
+
+		<label for="cancellation_policy">cancellation_policy:</label>
+		<input type="text" id="cancellation_policy" name="cancellation_policy"><br>
+
+		<label for="host_response_rate ">host_response_rate :</label>
+		<input type="number" id="host_response_rate" name="host_response_rate" ><br>
+
+		<label for="zipcode ">zipcode:</label>
+		<input type="text" id="zipcode " name="zipcode" ><br>
+  
+        <input type="submit" value="ok">
+	</fieldset>
+	</form>
+
+</body>
+</html>
+
